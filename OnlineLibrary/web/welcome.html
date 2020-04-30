@@ -1,0 +1,182 @@
+
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    </head>
+    <style>
+        body{
+            background: url(img/books.jpg) center center no-repeat fixed ;
+            background-size: cover ;
+            
+            
+        }
+        .getDesign{
+            opacity: 0.8 ;
+        }
+        .items{
+            margin-left: 20px ;
+        }
+        .gclr{
+            color:white ;
+            font-size: 14px ;
+        }
+        .align{
+           
+            
+            height: 40px ;
+            position:fixed ;
+            bottom: 0px ;
+            width:100% ;    
+            background-color: grey ;
+            opacity: 0.7 ;
+            border-radius: 10px;
+            z-index : -1 ;  
+        }
+        .greet{
+               margin-top: 25px ;
+               font-size: 22px ;
+               font-weight: bolder ;
+               font-family: 'Abril Fatface', cursive;
+               letter-spacing: 1px ;
+               line-height: 45px ;
+            }
+            .edtBck{
+                background-color: rgba(255,255,255,0.5) ;
+            }
+            .welcome{
+                font-family: 'Abril Fatface', cursive;
+                border: 6px dotted red ;
+            }
+            .extra{
+                font-weight: bolder ;
+                margin-top: 12px ;
+                border: 2px solid black ;
+                background-color: rgba(255,255,255,0.3) ;
+                padding-right: -40px ;
+            }
+        .footerContent{
+            text-align: center ;
+            color:black ;
+        }
+        .logo {
+            text-align: center ;
+            border-right: 1px solid white ;
+        }
+        .setSearch{
+            width : 200px ;
+            font-size: 14px ;
+        }
+        .regbtn{
+            padding: 17px 30px ;
+            margin-top: 23px ;
+            font-size: 16px ;
+            font-weight: bolder ;
+            transition : 1.5s ;
+            background-color: rgba(0 , 0 , 0 , 0.4) ;
+            border-radius: 20px ;
+        }
+    </style>
+    <body>
+      
+        <div class = "container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark getDesign">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand logo" href="welcome.html">GXLib<br>Tap To Learn.. </a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active items">
+        <a class="nav-link btn-lg gclr" id ="home" href="welcome.html">Home</a>
+      </li>
+      <li class="nav-item items">
+        <a class="nav-link btn-lg gclr" id ="admin" href="#">Administration</a>
+      </li>
+      <li class="nav-item items">
+        <a class="nav-link btn-lg gclr" id ="libmem" href="#">Library Member</a>
+      </li>
+       <li class="nav-item active items">
+        <a class="nav-link btn-lg gclr" id="bdetails" href="#">Book Details</a>
+      </li>
+      <li class="nav-item active items">
+        <a class="nav-link btn-lg gclr" id ="abtus" href="#">About Us</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control setSearch mr-sm-2" size ="43" type="search" placeholder="Search Books , learn more ..." name ="search" aria-label="Search">
+      <button class="btn btn-outline-success btn-lg my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+            <div class ="main">
+            <div class = "justify-content-md center-align" id = "main">
+            
+            <div class ="row justify-content-center ">
+                <p class = "display-3 welcome">Welcome to GXLib Online Library</p>
+            </div>
+            <div class ="row justify-content-center greet">
+                <div class ="col-md-11 edtBck">
+                    <p>NIE Library is now a registered member of National Digital Library (NDL, An initiative of MHRD, Govt. of India). NDL provides support for all academic levels including researchers and life-long learners, all disciplines, all popular form of access devices and differently-abled learners. It is being developed to help students to prepare for entrance and competitive examination, to enable people to learn and prepare from best practices from all over the world and to facilitate researchers to perform inter-linked exploration from multiple sources. It is being developed at IIT Kharagpur.</p>
+                </div>
+            </div>
+             <div class ="row justify-content-center">
+                 <div class ="col-md offset-5">
+                     <p class="btn btn-outline-success btn-lg regbtn" id="regis">Register/Sign Up</p>
+                 </div>
+            </div>
+            <div class ="row">
+                <div class ="col-md-7">
+                    <p class = "display-4 extra" >Some Of Our Famous Books --></p>
+                </div>
+            </div>
+      
+            </div>    
+        </div>
+          </div>
+        
+        <div class ="align">
+            <p class = "h4 footerContent">This site is &COPY; protected</p>
+            </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </body>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.5.0.min.js"
+  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+  crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        
+       
+       $('#libmem').on('click', function(event) {
+       $('.main').load('libMember.html');
+       });
+        
+        $('#admin').on('click' , function(event){
+           $('.main').load('admin.html')  ;
+        });
+       
+      $('#regis').on('click' , function(event)
+      {
+          console.log('heyy regis .. ') ;
+          $('.main').load('register.html'); 
+      });
+      
+ 
+
+    });
+</script>
+ 
+</html>

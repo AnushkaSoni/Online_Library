@@ -1,0 +1,74 @@
+
+<html>
+    <head>
+        <title>ADMINISTRATION</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <style>
+             body{
+                background: url(img/books.jpg) center center no-repeat fixed ;
+                background-size: cover ;
+            }
+            .wel{
+                font-weight:bold ;
+                font-family:  'Abril Fatface', cursive;
+            }
+            .rowContent{
+                background-color:rgba(0,0,0,0.5) ;
+            }
+            .second{
+                margin-top: 30px ;
+            }
+            .clr{
+                background-color: rgb(255 , 255 ,255 , 0.7) ;
+                height:100% ;
+            }
+        </style>
+    <body>
+        <div class="container clr">
+            <div class="row justify-content-center text-items-center rowContent">
+                <div class="col-md-8 text-center">
+                    <h1 class="display-3 wel">Logged in as ADMIN</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center text-items-center second">
+                    <div class="col-md-6 text-center">
+                        <form action="adminShow" method="post" id="nthng" >
+                            <input type="submit" value="Show Library Members" id="cts" class="btn btn-success btn-lg" >
+                        <form>
+                    </div>
+            </div> 
+            
+        
+        
+                 
+        </div>
+    </body>
+    <script>
+         $(document).ready(function(){
+             
+             
+             
+             $('#cts').on('click' , function(event){
+                 
+                 event.preventDefault() ;
+                 
+                 var f = $('#nthng').serializable() ;
+                $.ajax({
+                    url : 'adminShow' ,
+                    data:f ,
+                    type: 'POST',
+                     success : function(data , textStatus , jqXHR){
+                         console.log('printed') ;
+                     },
+                     error : function(jqXHR , textStatus , errorThrown){
+                         console.log('error occured') ;
+                     }
+                }) ; 
+             });
+         }) ;
+    </script>
+</html>
