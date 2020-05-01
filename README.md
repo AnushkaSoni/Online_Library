@@ -35,3 +35,9 @@ Class Diagram:
  
 ER Diagram:
 ![github-small](screenshot/erdig.jpg)
+
+Dataflow Diagram : 
+![github-small](screenshot/dataflow.jpg)
+
+Activity Diagram : 
+![github-small](screenshot/activity.jpg)
